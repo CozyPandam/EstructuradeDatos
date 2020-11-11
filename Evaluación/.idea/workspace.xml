@@ -81,7 +81,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1jW7MBchOVAicVJfXAcBVACfHgn" />
+  <component name="ProjectId" id="1jt3yABmj3GWi5J3WnIqK9bjB8T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -98,9 +98,10 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Evaluación" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Libreria_evaluacion.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -134,7 +135,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="ClaseMath" />
+      <module name="Evaluación" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -218,37 +219,43 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="397" y="263" key="FileChooserDialogImpl" timestamp="1605117333390">
+    <state x="258" y="271" key="FileChooserDialogImpl" timestamp="1605119401767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="397" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605117333390" />
-    <state width="880" height="275" key="GridCell.Tab.0.bottom" timestamp="1603914198171">
+    <state x="258" y="271" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605119401767" />
+    <state width="895" height="271" key="GridCell.Tab.0.bottom" timestamp="1605068034756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="880" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603914198171" />
-    <state width="880" height="275" key="GridCell.Tab.0.center" timestamp="1603914198171">
+    <state width="895" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605068034756" />
+    <state width="895" height="271" key="GridCell.Tab.0.center" timestamp="1605068034756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="880" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603914198171" />
-    <state width="880" height="275" key="GridCell.Tab.0.left" timestamp="1603914198171">
+    <state width="895" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605068034756" />
+    <state width="895" height="271" key="GridCell.Tab.0.left" timestamp="1605068034755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="880" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603914198171" />
-    <state width="880" height="275" key="GridCell.Tab.0.right" timestamp="1603914198171">
+    <state width="895" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605068034755" />
+    <state width="895" height="271" key="GridCell.Tab.0.right" timestamp="1605068034756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="880" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603914198171" />
-    <state x="0" y="96" key="SettingsEditor" timestamp="1603913333691">
+    <state width="895" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605068034756" />
+    <state x="0" y="137" key="SettingsEditor" timestamp="1605119407071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="96" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603913333691" />
-    <state x="0" y="183" key="new project wizard" timestamp="1604609811600">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="0" y="183" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1604609811600" />
-    <state x="171" y="279" key="refactoring.ChangeSignatureDialog" timestamp="1603910731598">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="171" y="279" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603910731598" />
+    <state x="0" y="137" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605119407071" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sample/Controller.java</url>
+          <line>47</line>
+          <properties class="sample.Controller" method="imprimirArreglo">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
