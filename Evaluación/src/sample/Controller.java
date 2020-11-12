@@ -1,8 +1,6 @@
 package sample;
 
 import Peces.Pez;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -12,25 +10,30 @@ import javafx.scene.control.TextField;
 
 public class Controller {
     @FXML TextField txtarreglo;
-    @FXML ListView lista;
+    @FXML ListView lista; 
     @FXML ComboBox comboBox;
-    int []arreglo_nacimientos = new int[4];
-    String[][] arreglo_combo ={
-            {"Trucha", "Pez Globo", "Sardina", "Carpa"}
-    };
+    int []arreglo_nacimientos = new int[2];
     int cont = 0;
+    Pez pez = new Pez();
+
+    Pez pescados = new Pez();
+    String[] peces = new String[3];
 
     @FXML protected void initialize(){
-        comboBox.getItems().addAll("Trucha", "Salmon","Pez Globo","Carpa");
+        comboBox.getItems().addAll("Trucha", "Salmon");
     }
     public void insertar (ActionEvent event){
         if (cont<4){
             int nacimiento = Integer.parseInt(txtarreglo.getText());
-            ObservableList combo = comboBox.getItems();
+            //ObservableList combo = comboBox.getItems();
             arreglo_nacimientos[cont]= nacimiento;
             cont++;
-            txtarreglo.setText("");
             imprimirArreglo(arreglo_nacimientos);
+
+            double x = Double.parseDouble(txtarreglo.getText());
+            String res = pescados.Por_nacimiento(x);
+            peces[1] = res;
+            txtarreglo.setText("");
         }else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("ERROR");
@@ -40,8 +43,9 @@ public class Controller {
 
     }
     public void procesar (ActionEvent event){
-        Pez peces  = new Pez(arreglo_nacimientos);
-        int [] res=
+        double y = Double.parseDouble(txtarreglo.getText());
+        lista.getItems().add("Pescado"+comboBox.getValue().toString()+ "  nacen" + y +  "  por cria"  + peces[1] +  "  al año, perdida de peces"  );
+        txtarreglo.setText(String.valueOf(""));
 
     }
 
