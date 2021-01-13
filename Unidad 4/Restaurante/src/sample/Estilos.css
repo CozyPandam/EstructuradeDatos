@@ -1,0 +1,24 @@
+.fondo{
+    -fx-background-image: url("./img/Logo2.jpg");
+    -fx-background-size: 50% 50%;
+}
+.fondo2{
+    -fx-background-image: url("./img/Logo2.jpg");
+    -fx-background-size: 50% 50%;
+}
+.buttonAceptar{
+    -fx-background-color: #FF4E50;
+    -fx-background-radius: 30px;
+}
+.cabecera{
+    -fx-background-color: #F9D423;
+
+}
+.button2{
+    -fx-background-color: #FF4E50;
+    -fx-background-radius: 30px;
+}
+.incertar{
+ -fx-background-color: #F9D423;
+    -fx-background-radius: 30px;
+}

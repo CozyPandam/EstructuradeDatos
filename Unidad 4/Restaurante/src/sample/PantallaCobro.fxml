@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="390.0" prefWidth="536.0" styleClass="fondo2" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCobro">
+   <top>
+      <HBox prefHeight="70.0" prefWidth="500.0" styleClass="cabecera" stylesheets="@Estilos.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Restaurant" textFill="#ff4e50">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Profile.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="8.0" top="8.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Geovani Torres" textFill="#ff4e50">
+               <HBox.margin>
+                  <Insets right="20.0" top="26.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox prefHeight="320.0" prefWidth="179.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="Bebida">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></Label>
+            <HBox prefHeight="47.0" prefWidth="126.0">
+               <children>
+                  <ComboBox fx:id="comboBebidas" prefWidth="150.0" />
+                  <TextField fx:id="txtCantBebidas" />
+               </children>
+            </HBox>
+            <Label text="Platillo">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="27.0" prefWidth="126.0">
+               <children>
+                  <ComboBox fx:id="comboPlatillos" prefWidth="150.0" />
+                  <TextField fx:id="txtCantPlatillos" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#insertarPedido" prefHeight="25.0" prefWidth="141.0" styleClass="incertar" stylesheets="@Estilos.css" text="Insertar" textFill="#ff4e50">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label text="Nombre">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombre">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#guardarPedido" prefHeight="25.0" prefWidth="124.0" styleClass="button2" stylesheets="@Estilos.css" text="GUARDAR PEDIDO" textFill="#f9d423">
+               <font>
+                  <Font name="Times New Roman Bold" size="11.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabla" prefHeight="248.0" prefWidth="362.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+            <Label text="Proximo pedido">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Nombre:">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="nombrePedido" text="Label">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#finalizar" prefHeight="25.0" prefWidth="94.0" styleClass="button2" stylesheets="@Estilos.css" text="Finalizar" textFill="#f9d423">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="372.0" styleClass="incertar" stylesheets="@Estilos.css" text="Ver Status del Cliente" textFill="#ff4e50" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
